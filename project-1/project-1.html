@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Business Calculator</title>
+</head>
+
+<body>
+    <script>
+
+        // Calculater 
+
+        let a = Number(prompt("Enter first number:"));
+        let b = Number(prompt("Enter second number:"));
+
+        let add = a + b;
+        let sub = a - b;
+        let mul = a * b;
+        let div = a / b;
+
+        console.log(".....................................");
+
+        console.log("1. BASIC ARITHMETIC CALCULATOR");
+        console.log(`First Number = ${a}`);
+        console.log(`Second Number = ${b}`);
+        console.log(`Addition = ${add}`);
+        console.log(`Subtraction = ${sub}`);
+        console.log(`Multiplication = ${mul}`);
+        console.log(`Division = ${div}`);
+
+        // Swapping 
+
+        let x = Number(prompt("Enter first value to swap:"));
+        let y = Number(prompt("Enter second value to swap:"));
+
+        let temp = x;
+        x = y;
+        y = temp;
+
+        console.log(".....................................");
+        console.log("2. SWAPPING PROGRAM");
+        console.log(`After Swapping:`);
+        console.log(`x = ${x}`);
+        console.log(`y = ${y}`);
+
+        // Grade calculator 
+
+
+        let marks = Number(prompt("Enter your marks:"));
+
+        console.log(".....................................");
+
+        console.log("3. GRADE CALCULATOR");
+
+        result = marks >= 80 && marks < 100 ? "A"
+            : marks >= 70 ? "B"
+                : marks >= 60 ? "C"
+                    : marks >= 50 ? "D"
+                        : marks >= 40 ? Fail
+                            : "Invalid marks";
+
+        console.log(`Your As per ${marks} grade is ${result}`);
+
+        // Bill 
+
+        let price = Number(prompt("Enter product price:"));
+        let quantity = Number(prompt("Enter product quantity:"));
+        let total = price * quantity;
+        let discount = total * 10 / 100;
+        let netAmount = total - discount;
+
+        console.log(".....................................");
+
+        console.log("4. BILL CALCULATION");
+        console.log(`Price = ${price}`);
+        console.log(`Quantity = ${quantity}`);
+        console.log(`Total = ${total}`);
+        console.log(`Discount (10%) = ${discount}`);
+        console.log(`Net Amount = ${netAmount}`);
+
+        // Simple interest 
+
+        let P = Number(prompt("Enter Principal:"));
+        let R = Number(prompt("Enter Rate of Interest:"));
+        let T = Number(prompt("Enter Time (in years):"));
+        let SI = (P * R * T) / 100;
+
+        console.log(".....................................");
+
+        console.log("5. SIMPLE INTEREST");
+        console.log(`Principal = ${P}`);
+        console.log(`Rate = ${R}%`);
+        console.log(`Time = ${T} years`);
+        console.log(`Simple Interest = ${SI}`);
+
+        // Employee Salary
+
+        let basic = Number(prompt("Enter Basic Salary:"));
+        let hra = basic * 10 / 100;
+        let da = basic * 15 / 100;
+        let gross = basic + hra + da;
+
+        console.log(".....................................");
+
+        console.log("6. EMPLOYEE SALARY CALCULATION");
+        console.log(`Basic Salary = ${basic}`);
+        console.log(`HRA = ${hra}`);
+        console.log(`DA = ${da}`);
+        console.log(`Gross Salary = ${gross}`);
+
+    </script>
+</body>
+
+</html>
